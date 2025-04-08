@@ -3,6 +3,7 @@ notebooks
 local_s3
 rough
 models
+reports
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
