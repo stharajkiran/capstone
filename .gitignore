@@ -1,3 +1,10 @@
+cred.txt
+notebooks
+local_s3
+rough
+models
+data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
