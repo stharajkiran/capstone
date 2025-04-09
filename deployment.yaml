@@ -15,23 +15,23 @@ spec:
         app: flask-app
     spec:
       containers:
-      - name: flask-app
-        image: 020866158197.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
-        ports:
-        - containerPort: 5000
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "1"
-        env:
-        - name: CAPSTONE_TEST
-          valueFrom:
-            secretKeyRef:
-              name: capstone-secret
-              key: CAPSTONE_TEST
+        - name: flask-app
+          image: 803691999627.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "1"
+          env:
+            - name: CAPSTONE_TEST
+              valueFrom:
+                secretKeyRef:
+                  name: capstone-secret
+                  key: CAPSTONE_TEST
 
 ---
 apiVersion: v1
